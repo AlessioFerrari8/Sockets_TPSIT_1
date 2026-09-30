@@ -22,6 +22,7 @@ def decifra(pacchetto):
 
     cipher = AES.new(secret_key, AES.MODE_GCM, nonce=nonce)
     try:
+        print(f"None: {nonce}, tag: {tag}, testo_cifrato: {testo_cifrato}")
         return cipher.decrypt_and_verify(testo_cifrato, tag).decode('utf-8')
     except ValueError:
         return "errore, messaggio alterato o chiave sbagliata"
