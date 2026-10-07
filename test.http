@@ -1,0 +1,14 @@
+###
+GET http://localhost:5000/calcolo
+
+###
+POST http://localhost:5000/calcolo
+
+###
+PATCH http://localhost:5000/calcolo
+
+###
+DELETE http://localhost:5000/calcolo
+
+###
+PUT http://localhost:5000/calcolo
